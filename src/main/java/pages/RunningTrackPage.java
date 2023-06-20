@@ -14,11 +14,11 @@ public class RunningTrackPage  extends BasePage {
     }
     private static class Locators{
         private final static String xpathFormTrack = "//form[@class='add-comment ng-untouched ng-pristine ng-invalid']";
-        private final static  String xpathClickableButton = "//button[text()=' Увійти в особистий кабінет ']";// moe
-        ////span[text()='Ноутбуки']
+        private final static  String xpathClickableButton = "//button[text()=' Увійти в особистий кабінет ']";
+
         protected final static String xpathH3VhidForClickableButton="//h3[@class='modal__heading']";
         protected final static String xpathHarakteristikiTab="//a[text()=' Характеристики ']";
-        ////h3[text()=' Вхід']
+
         protected final static String xpathH1ElementByHarakteristikiPage="//h1[text()='Характеристики Бігова доріжка Life Fitness T5 Track Connect']";
         protected final static String xpathBuyButton="//button [@class='buy-button button button--with-icon button--green button--medium buy-button--tile ng-star-inserted']";
         //a [@data-id='Apple']
@@ -27,7 +27,7 @@ public class RunningTrackPage  extends BasePage {
 
     private static class Label{
 
-        protected final static String TrackUrl="https://rozetka.com.ua/ua/life_fitness_t5_track_connect/p303787753/";//moe
+        protected final static String TrackUrl="https://rozetka.com.ua/ua/life_fitness_t5_track_connect/p303787753/";
 
         protected final static String TrackTitleName="Бігова доріжка Life Fitness T5 Track Connect – низькі ціни, кредит, оплата частинами в інтернет-магазині ROZETKA | Купити в Україні: Києві, Харкові, Дніпрі, Одесі, Запоріжжі, Львові";
 

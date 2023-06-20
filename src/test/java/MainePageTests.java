@@ -8,34 +8,34 @@ import static org.testng.Assert.assertTrue;
 import static pages.MainPage.Label.mainPageName;
 
 
-public class MainePageTests extends BaseTest{
+    public class MainePageTests extends BaseTest{
 
 
-    @Test                      // https://github.com/Danil93K/FirstExam/tree/main/TestRail !
+    @Test
     public void mainPageName(){
         mainPage.openPage();
         mainPage.equalsPageTitleWithString(mainPageName);
        }
     @Test
-    public void katalogButtonIsDisplayed() {// knopka katalog otobragaetsya git
+    public void katalogButtonIsDisplayed() {
         mainPage.openPage();
         mainPage.elementKatalogButtonIsDisplayed();
     }
     @Test
-     public void korzinaEmptyAfterOpen()  {// korzina pustaya posle otkritiya
+     public void korzinaEmptyAfterOpen()  {
             mainPage.openPage();
             mainPage.clickOnKorzinaButton();
        mainPage.equalsOfStrings(mainPage.getTextFromEmptyKorzinaElement(), MainPage.Label.textElementKorzinaEmpty);
      }
     @Test
-    public void equalsTextAfterSearch() throws InterruptedException {// pravilniy text posle poiska
+    public void equalsTextAfterSearch() throws InterruptedException {
     mainPage.openPage();
     mainPage.sendKeysToSearchTextAndClickSearchButton();
     Thread.sleep(3000);// без паузы срабатывает по настроению
     mainPage.equalsOfTextH1ElementAndExpectedH1ElementText();
     }
     @Test
-    public void elementHamburgerMenuIsClickable() throws InterruptedException {// element hambburger clickabelniy
+    public void elementHamburgerMenuIsClickable() throws InterruptedException {
         mainPage.openPage();
         mainPage.clickOnHamburger();
         mainPage.elementIsDisplayedForAssertAfterClickHamburgerMenu();

@@ -28,9 +28,9 @@ public class MainPage extends BasePage {
     }
 
     public static class Label{
-        private final static String url = "https://rozetka.com.ua/"; //Pomenyal
-        public static String  mainPageName ="Інтернет-магазин ROZETKA™: офіційний сайт найпопулярнішого онлайн-гіпермаркету в Україні";//moe
-        public static String textElementKorzinaEmpty="Кошик порожній";//moe
+        private final static String url = "https://rozetka.com.ua/";
+        public static String  mainPageName ="Інтернет-магазин ROZETKA™: офіційний сайт найпопулярнішого онлайн-гіпермаркету в Україні";
+        public static String textElementKorzinaEmpty="Кошик порожній";
         public static String textToSendKeysSearch="Компас";
         public static String expectedTextFromH1AfterSearch="Компаси";
     }

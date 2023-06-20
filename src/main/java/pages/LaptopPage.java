@@ -12,9 +12,6 @@ public class LaptopPage extends BasePage{
         super(driver);
     }
     private static class Locators{
-        private final static By h1Element = By.tagName("h1");
-        private final static By labelElement = By.xpath("//div[@class='search-page__box-title']/label");
-        ////span[text()='Ноутбуки']
         protected final static String xpathKroshkaNoutbuki="//span[text()='Ноутбуки']";
         protected final static String xpathAuthorizationIcon="//button [@class='header__button ng-star-inserted']";
         ////h3[text()=' Вхід']
@@ -27,19 +24,11 @@ public class LaptopPage extends BasePage{
     }
 
     private static class Label{
-        private final static String partOfUrlText = "Найдено по запросу";
-        protected final static String laptopUrl="https://rozetka.com.ua/ua/notebooks/c80004/";//moe
+        protected final static String laptopUrl="https://rozetka.com.ua/ua/notebooks/c80004/";
 
         protected final static String laptopTitleName="Ноутбуки - ROZETKA | Купити ноутбук в Києві: ціна, відгуки, продаж, вибір ноутбуків в Україні";
         protected final static String dellTitleName="Ноутбуки Dell - ROZETKA | Купити ноутбук Делл в Києві: ціна, відгуки, продаж";
-
-
-
-
-
     }
-
-
     public void elementAuthorizationFieldVhidIsDisplayed(){
         assertTrue(elements.isElementDisplayed(Locators.xpathElementAuthorizationFieldVhid), "Элемент не отображается, хотя должен был");
     }
@@ -70,7 +59,6 @@ public class LaptopPage extends BasePage{
 
         assertEquals(elements.getTitle(), Label.dellTitleName);
     }
-
     public void openPage(){
 
         driver.get(Label.laptopUrl);
