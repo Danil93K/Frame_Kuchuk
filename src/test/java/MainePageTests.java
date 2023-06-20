@@ -11,13 +11,13 @@ import static pages.MainPage.Label.mainPageName;
 public class MainePageTests extends BaseTest{
 
 
-    @Test                      // https://github.com/Danil93K/FirstExam/tree/main/TestRail !!!!!!!!!!!!!!!!
-    public void mainPageName(){// pravilnoe nazvanie glavnoy stranici
+    @Test                      // https://github.com/Danil93K/FirstExam/tree/main/TestRail !
+    public void mainPageName(){
         mainPage.openPage();
         mainPage.equalsPageTitleWithString(mainPageName);
        }
     @Test
-    public void katalogButtonIsDisplayed() {// knopka katalog otobragaetsya
+    public void katalogButtonIsDisplayed() {// knopka katalog otobragaetsya git
         mainPage.openPage();
         mainPage.elementKatalogButtonIsDisplayed();
     }
