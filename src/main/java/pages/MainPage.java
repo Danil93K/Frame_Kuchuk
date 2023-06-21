@@ -16,7 +16,7 @@ public class MainPage extends BasePage {
 
         protected final static String xpathKorzinaMainPage="//rz-cart[@class='header-actions__component']";//moe
         protected final static String xpathEmptyKorzinaElement="//h4 [@class='cart-dummy__heading']";//moe
-        protected final static String xpathZnaytiButton="//button [@class='button button_color_green button_size_medium search-form__submit ng-star-inserted']";//moe
+        protected final static String xpathZnaytiButton="//button [@class='button button_color_green button_size_medium search-form__submit']";//moe
 
         protected final static String xpathH1AfterSearch="//h1 [@class='catalog-heading ng-star-inserted']";//moe
 
@@ -55,6 +55,7 @@ public class MainPage extends BasePage {
     public void sendKeysToSearchTextAndClickSearchButton(){
 
         elements.findElementByXpath(Locators.xpathSearchField).sendKeys(Label.textToSendKeysSearch);
+        elements.clickOnElementByXpath(Locators.xpathZnaytiButton);
         elements.clickOnElementByXpath(Locators.xpathZnaytiButton);
     }
     public void equalsOfTextH1ElementAndExpectedH1ElementText(){
